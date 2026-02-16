@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIYAD AUTO PRESTIGE | Excellence à Rabat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --bordeaux: #4D0011; --or: #C5A059; --gris: #f9f9f9; }
+        body { background-color: white; color: #333; font-family: 'Montserrat', sans-serif; margin: 0; scroll-behavior: smooth; }
+        
+        /* Header & Slogan */
+        header { background: #000; padding: 15px 5%; text-align: center; color: white; border-bottom: 2px solid var(--or); }
+        .logo { font-family: 'Cinzel'; font-size: 2rem; margin-bottom: 5px; }
+        .slogan { font-style: italic; font-size: 0.9rem; color: var(--or); letter-spacing: 2px; }
+
+        /* Sections */
+        section { padding: 60px 10%; }
+        .section-title { font-family: 'Cinzel'; text-align: center; font-size: 2.2rem; color: var(--bordeaux); margin-bottom: 40px; }
+        .about-text { max-width: 800px; margin: 0 auto; text-align: center; line-height: 1.8; font-size: 1.1rem; }
+
+        /* Organisation Vente & Location */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; justify-content: center; }
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; border: 1px solid #eee; }
+        .card:hover { transform: translateY(-10px); }
+        .card img { width: 100%; height: 350px; object-fit: cover; display: block; margin: 0 auto; } /* Photos centrées */
+        .card-content { padding: 20px; }
+        .price { background: var(--bordeaux); color: white; padding: 10px 20px; display: inline-block; margin: 15px 0; font-weight: bold; border-radius: 5px; }
+
+        /* Services Spéciaux */
+        .services-box { background: var(--gris); display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .service-item { background: white; padding: 30px; border-left: 5px solid var(--or); box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .service-item i { color: var(--bordeaux); font-size: 2rem; margin-bottom: 15px; }
+
+        /* Formulaire */
+        .form-container { background: #1a1a1a; color: white; padding: 50px 10%; }
+        form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 900px; margin: 0 auto; }
+        input, textarea, select { padding: 15px; border-radius: 5px; border: none; font-family: 'Montserrat'; }
+        textarea { grid-column: span 2; }
+        .btn-submit { grid-column: span 2; background: var(--or); color: black; font-weight: bold; cursor: pointer; text-transform: uppercase; transition: 0.3s; }
+        .btn-submit:hover { background: white; }
+
+        /* Musique Vintage */
+        .music-bar { position: fixed; bottom: 20px; right: 20px; background: rgba(0,0,0,0.9); color: white; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 15px; z-index: 1000; border: 1px solid var(--or); }
+        
+        footer { background: #f4f4f4; padding: 40px; text-align: center; border-top: 1px solid #ddd; }
+        .contact-links a { color: var(--bordeaux); text-decoration: none; font-weight: bold; margin: 0 15px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">RIYAD AUTO <span style="color: var(--or);">PRESTIGE</span></div>
+    <div class="slogan">L'ÉLÉGANCE INTEMPORELLE POUR VOS PLUS GRANDS MOMENTS</div>
+</header>
+
+<section id="about">
+    <h2 class="section-title">Qui Sommes-Nous ?</h2>
+    <div class="about-text">
+        <p>Situé au cœur de <strong>Rabat (Hay Riyad)</strong>, Riyad Auto Prestige est le spécialiste de la mobilité d'exception au Maroc. Passionnés par l'automobile de luxe et les classiques "Vintage", nous offrons une sélection rigoureuse de véhicules pour la <strong>vente et la location</strong>. Que ce soit pour le prestige d'une Mercedes W140 ou l'adrénaline d'une Mustang, nous garantissons un service irréprochable à une clientèle exigeante.</p>
+    </div>
+</section>
+
+<section style="background: var(--gris);">
+    <h2 class="section-title">Vente & Location</h2>
+    <div class="grid">
+        <div class="card"><img src="mercedes.jpg.jpg"><div class="card-content"><h3>Mercedes W140</h3><div class="price">1500 DH / Jour</div></div></div>
+        <div class="card"><img src="mustang.jpg.jpeg"><div class="card-content"><h3>Ford Mustang GT</h3><div class="price">1200 DH / Jour</div></div></div>
+        <div class="card"><img src="bmw.jpg.jpeg"><div class="card-content"><h3>BMW M-Sport</h3><div class="price">900 DH / Jour</div></div></div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Nos Services Spéciaux</h2>
+    <div class="services-box">
+        <div class="service-item">
+            <i class="fas fa-user-tie"></i>
+            <h3>Service avec Chauffeur</h3>
+            <p>Profitez du trajet en toute sérénité. Nos tarifs dépendent du trajet (En ville ou Hors ville).</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-gem"></i>
+            <h3>Service Vintage Spécial</h3>
+            <p>Une touche rétro pour vos événements : Mariages, Shooting photos et tournages.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-hotel"></i>
+            <h3>Hôtels & Événements</h3>
+            <p>Partenariats exclusifs pour le transport de VIP et délégations vers les plus grands hôtels.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-plane-arrival"></i>
+            <h3>Transfert Aéroport</h3>
+            <p>Accueil personnalisé et transfert de prestige vers les aéroports du Royaume.</p>
+        </div>
+    </div>
+</section>
+
+<section class="form-container">
+    <h2 class="section-title" style="color: var(--or);">Réservation & Informations</h2>
+    <form>
+        <input type="text" placeholder="Nom Complet" required>
+        <input type="email" placeholder="Votre Email" required>
+        <input type="tel" placeholder="Téléphone" required>
+        <select>
+            <option>Type de Service</option>
+            <option>Location sans chauffeur</option>
+            <option>Service avec Chauffeur (Ville)</option>
+            <option>Service avec Chauffeur (Hors Ville)</option>
+            <option>Événement / Mariage</option>
+        </select>
+        <textarea rows="5" placeholder="Détails de votre demande (Dates, véhicule souhaité...)"></textarea>
+        <button type="submit" class="btn-submit">Envoyer la demande</button>
+    </form>
+</section>
+
+<div class="music-bar">
+    <i class="fas fa-play-circle" id="playIcon" style="font-size: 2rem; cursor: pointer; color: var(--or);" onclick="toggleMusic()"></i>
+    <div>
+        <div style="font-weight:bold; font-size: 0.8rem;">VINTAGE MUSIQUE</div>
+        <div style="font-size:0.6rem; color:#aaa;">Farid Al Atrache - Hekayat Omri</div>
+    </div>
+</div>
+
+<footer>
+    <p>Avenue Al Nakhil, Résidence Kasba 52 bis, Rabat, Hay Riyad</p>
+    <div class="contact-links">
+        <a href="tel:+212698824872"><i class="fas fa-phone"></i> +212 698 824 872</a>
+        <a href="mailto:riyadautoprestige@gmail.com"><i class="fas fa-envelope"></i> riyadautoprestige@gmail.com</a>
+    </div>
+</footer>
+
+<div id="yt-player"></div>
+
+<script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('yt-player', { height: '0', width: '0', videoId: 'tJg82oRg8GU', playerVars: { 'autoplay': 0, 'loop': 1, 'playlist': 'tJg82oRg8GU' } });
+    }
+    var isPlaying = false;
+    function toggleMusic() {
+        const icon = document.getElementById('playIcon');
+        if(!isPlaying) { 
+            player.playVideo(); 
+            icon.classList.replace('fa-play-circle', 'fa-pause-circle');
+            isPlaying = true; 
+        } else { 
+            player.pauseVideo(); 
+            icon.classList.replace('fa-pause-circle', 'fa-play-circle');
+            isPlaying = false; 
+        }
+    }
+</script>
+</body>
+</html>
